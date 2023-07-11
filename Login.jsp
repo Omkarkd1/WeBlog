@@ -1,0 +1,85 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">    
+    <title>WeBlog - Heaven for bloggers</title>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/utils.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/mobile.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/
+    4.0.0/css/bootstrap.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+    
+</head>
+<body>
+    <nav class="navigation max-width-1 m-auto">
+        <div class="nav-left">
+            <a href="/">
+                <span><img src="img/logo.png" width="94px" alt=""></span>
+            </a>
+            <ul>
+                <li><a href="index.jsp">Home</a></li>
+             	<li><a href="Signup.html">Signup</a></li>
+                <li><a href="Contact.jsp">Contact</a></li>
+            </ul>
+        </div>
+        <div class="nav-right">
+            <form action="/search.html" method="get">
+                <input class="form-input" type="text" id="Search" placeholder="Article Search">
+                <button class="btn" onclick="Search();">Search</button>
+            </form>
+        </div>
+    </nav>
+    <div class="max-width-1 m-auto">
+        <hr>
+    </div>
+
+    <!---Login-->
+    <div class="contact-content font1 max-width-1 m-auto">
+        <div class="max-width-1 m-auto">
+        <div class="content-left">
+        <div class="contact-content font1 max-width-1 m-auto">
+            <div class="max-width-1 m-auto mx-1">
+                <h2>Login</h2>
+                <div class="contact-form">
+                	<form action=log method="post">
+                    <div class="form-box">
+                        <br>
+                    	<input type="text" name="username" placeholder="Username" id="usernames" required class="form-control">
+                    	<h5 id="usercheck" style="color: red;">
+                        **Username is missing
+                    	</h5>
+                    </div>
+                    <div class="form-box">
+                        <br>
+                    <input type="password" name="pass" placeholder="Password:" id="password" required class="form-control">
+                    <h5 id="passcheck" style="color: red;">
+                        **Please Fill the password
+                    </h5>
+                    </div>
+                    <div class="form-box">
+                        <br>
+                        <input type="submit" id="submitbtn" value="Submit" class="btn btn-primary">
+            			</form>
+                        <br>
+                        <br>
+                    </div>
+                </div>
+            </div> 
+    </div>
+    </div>
+    </div>
+    </div>
+    <div class="footer">
+        <p>Omkar Dehankar MCA 1st year </p><br>
+        <p>Vaishnavi Panchriya MCA 1st year </p>
+    </div>
+    <script src="js/login.js"></script>
+</body>
+</html>
